@@ -13,5 +13,16 @@
   "scripts": {
     "start": "yarn --cwd backend start",
     "build": "yarn --cwd frontend build"
+  },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+    "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+    "post-applypatch": "echo \"[Husky] post-applypatch\"",
+    "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
+  "dependencies": {
+    "husky": "^7.0.4"
   }
 }
